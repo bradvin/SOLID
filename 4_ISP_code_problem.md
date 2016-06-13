@@ -15,7 +15,7 @@
     }
     
     class Eagle {
-      void Walk() { return ""; }
+      void Walk() { return "seldom"; }
       void Fly() { return "soar"; }
       void Talk() { return ""; }
     }
@@ -27,7 +27,7 @@
     }
     
     class Parrot {
-      void Walk() { return ""; }
+      void Walk() { return "caged"; }
       void Fly() { return ""; }
       void Talk() { return "polly"; }
     }    
