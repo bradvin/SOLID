@@ -4,7 +4,7 @@
       int CustomerType = 0;
   
       int GetDiscount() {
-        if (this.PlayerType == 1) {
+        if (this.CustomerType == 1) {
           return 50;
         } else {
           return 10;
