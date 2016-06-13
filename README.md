@@ -34,26 +34,7 @@ The "closed" part of the rule states that once a module has been developed and t
 
 The "open" part says that you should be able to extend existing code in order to introduce new functionality.
 
-    /* badly designed Player class */
-    class Player {
-      int PlayerType;
-  
-    	int GetDiscount() {
-    		if (this.PlayerType == 1) {
-    			return 50;
-    		} else {
-    			return 10;
-    		}
-    	}
-  	}
-    
-    /* refactor of the above Player class to follow the OCP */
-    class Player {
-      int GetDiscount { return 10; }
-    }
-    class GoldPlayer : Player {
-      int GetDiscount { return 50; }
-    }
+[View OCP code problem](2_OCP_code_problem.md)
 
 ## Liskov Substitution Principle
 
