@@ -24,19 +24,7 @@ As a software developer, your goal should be to create code that is loosely coup
 
 When a class has multiple responsibilities, the likelihood that it will need to be changed increases. Each time a class is modified the risk of introducing bugs grows. By concentrating on a single responsibility, this risk is limited.
 
-    /* example of a class not following SRP */
-    class UserService {
-      void Validate(User user) { }
-      void MakePayment(User fromUser, User toUser) { }
-    }
-  
-    /* refactor of the above UserService to follow SRP */
-    class ValidationUserService {
-      void Validate(User user) { }
-    }
-    class BankingUserService {
-      void MakePayment(User fromUser, User toUser) { }
-    }
+[View SRP code problem](1_SRP_code_problem.md)
 
 ## Open-closed Principle
 
