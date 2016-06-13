@@ -1,9 +1,9 @@
 > refactor Customer class to follow the OCP
 
-    class Player {
+    class Customer {
       int GetDiscount { return 10; }
     }
-    class GoldPlayer : Player {
+    class GoldCustomer : Customer {
       int GetDiscount { return 50; }
     }
 
