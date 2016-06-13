@@ -54,23 +54,7 @@ If the type of the dependency must be checked so that behaviour can be modified 
 
 Often when you create a class with a large number of methods and properties, the class is used by other types that only require access to one or two members. The classes are more tightly coupled as the number of members they are aware of grows. When you follow the ISP, large classes implement multiple smaller interfaces that group functions according to their usage.
 
-    /* example code showing bad interface segregation */
-    interface IBird {
-      void Breath();
-      void Walk();
-      void Fly();
-    }
-    
-    /* refactored code following ISP */
-    interface IBird {
-      void Breath();
-      void Walk();
-    }
-    interface IFlyingBird : IBird {
-      void Fly();
-    }
-  	class Eagle : IFlyingBird { }
-  	class Ostrich : IBird { }
+[View ISP code problem](4_ISP_code_problem.md)
 
 ## Dependancy Inversion Principle
 
