@@ -64,38 +64,7 @@ The DIP primarily relates to the concept of layering within applications, where 
 
 The principle specifies that where dependencies exist between classes, they should be defined using abstractions, such as interfaces, rather than by referencing classes directly. This reduces fragility caused by changes in low level modules introducing bugs in the higher layers. The DIP is often met with the use of dependency injection.
 
-    /* example code showing tightly coupled dependancies */
-    class PlayerService {
-      void Bet(int amount) {
-  	    var log = new Logger();
-  	    log.logEvent("Player is placing a bet");
-  
-  		var bettingService = new BettingService();
-  		bettingService.PlaceBet(this, amount);
-      }
-    }
-  
-  	/* refactored code showing loosely coupled code following DIP */
-  	interface ILogger {
-  		void LogEvent(string event);
-  	}
-  	interface IBettingService {
-  		void PlaceBet(Player player, int amount);
-  	}
-  	
-  	class PlayerService {
-  		IBettingService _bettingService;
-  		ILogger _logger;
-  		PlayerService(ILogger logger, IBettingService bettingService) {
-  			_logger = logger;
-  			_bettingService = bettingService;
-  		}
-  		
-  		void Bet(int amount) {
-  			_logger.logEvent("Player is placing a bet");
-  			_bettingService.PlaceBet(this, amount);
-  		}
-  	}
+[View DIP code problem](5_DIP_code_problem.md)
 
 ## References and Further Reading
 
