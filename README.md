@@ -46,30 +46,7 @@ If you create a class with a dependency of a given type, you should be able to p
 
 If the type of the dependency must be checked so that behaviour can be modified according to type, or if subtypes generated unexpected rules or side effects, the code may become more complex, rigid and fragile.
 
-    /* example code which does not follow the LSP */
-    class Bird {
-      void Fly() { return "fly"; }
-    }
-    class Eagle : Bird {
-      void Fly() { return "soar"; }
-    }
-    class Ostrich {
-      void Fly() { throw exception("can't fly"); }
-    }
-    
-    /* refactored code following LSP */
-    interface IMammal {
-    }
-    interface IFlyingMammal {
-      void Fly();
-    }
-    class Bird : IMammal {
-      void Fly() { return "fly"; }
-    }
-    class Eagle : Bird {
-      void Fly() { return "soar"; }
-    }
-    class Ostrich : IMammal { }
+[View LSP code problem](3_LSP_code_problem.md)
 
 ## Interface Segregation Principle
 
