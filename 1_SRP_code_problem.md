@@ -7,4 +7,4 @@
 
 > What changes can be made to better follow SRP ?
 
-[View the refactored code](1_SRP_code_refactor.md)
+[&laquo; back to readme.md](README.md) | [view the refactored code &raquo;](1_SRP_code_refactor.md)
