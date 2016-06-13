@@ -1,12 +1,12 @@
 /* refactored UserService to better follow SRP */
 
-class ValidationUserService {
-  void Validate(User user) { }
-}
-
-class BankingUserService {
-  void MakePayment(User fromUser, User toUser) { }
-}
+    class ValidationUserService {
+      void Validate(User user) { }
+    }
+    
+    class BankingUserService {
+      void MakePayment(User fromUser, User toUser) { }
+    }
 
 /* each class now has a single responsibility */
 
