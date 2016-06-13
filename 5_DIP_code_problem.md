@@ -3,7 +3,7 @@
     class CustomerService {
       void ActivateLogin() {
         var log = new TextFileLogger();
-        log.logEvent("Player is placing a bet");
+        log.logEvent("Customer is being activated");
     
         var emailService = new MailchimpEmailService();
         emailService.SendWelcomeEmail(this);
