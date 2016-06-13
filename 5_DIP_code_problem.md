@@ -1,12 +1,12 @@
 > Example code showing tightly coupled dependancies
 
     class CustomerService {
-      void ActivateLogin() {
+      void ActivateLogin(Customer customer) {
         var log = new TextFileLogger();
-        log.logEvent("Customer is being activated");
+        log.logEvent("Customer " + customer.name + " is being activated");
     
         var emailService = new MailchimpEmailService();
-        emailService.SendWelcomeEmail(this);
+        emailService.SendWelcomeEmail(customer);
       }
     }
 
