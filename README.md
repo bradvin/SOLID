@@ -4,11 +4,11 @@
 
 SOLID is an acronym for the 5 principles of Object Orientated Design, created by Robert Martin (Uncle Bob). It stands for:
 
-* Single Responsibility Principle
-* Open-Closed Principle
-* Liskov Substitution Principle
-* Interface Segregation Principle
-* Dependancy Inversion Principle
+- Single Responsibility Principle
+- Open-Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
 
 ## Why Follow These Principles?
 
@@ -42,7 +42,7 @@ The "open" part says that you should be able to extend existing code in order to
 
 The principle is named after Barbara Liskov, and originally stated "Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T".
 
-If you create a class with a dependency of a given type, you should be able to provide an object of that type or any of its subclasses **without introducing unexpected results** and **without the dependent class knowing the actual type** of the provided dependency. 
+If you create a class with a dependency of a given type, you should be able to provide an object of that type or any of its subclasses **without introducing unexpected results** and **without the dependent class knowing the actual type** of the provided dependency.
 
 If the type of the dependency must be checked so that behaviour can be modified according to type, or if subtypes generated unexpected rules or side effects, the code may become more complex, rigid and fragile.
 
