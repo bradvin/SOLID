@@ -1,4 +1,4 @@
-> refactor dependancies out into general interfaces
+> refactor dependencies out into general interfaces
 
     interface ILogger {
         void LogEvent(string event);
@@ -30,13 +30,13 @@
         this._logger = logger;
         this._mailer = mailService;
       }
-    
+
       void ActivateLogin(Customer customer) {
         this._logger.logEvent("Customer " + customer.name + " is being activated");
         this._mailer.SendWelcomeEmail(customer);
       }
     }
-    
-> We can now easliy swap out the dependancies for different implementations with no changes to the CustomerService
+
+> We can now easliy swap out the dependencies for different implementations with no changes to the CustomerService
 
 [&laquo; back to readme.md](README.md)

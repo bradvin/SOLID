@@ -1,4 +1,4 @@
-> Example code showing tightly coupled dependancies
+> Example code showing tightly coupled dependencies
 
     class CustomerService {
       void ActivateLogin(Customer customer) {
